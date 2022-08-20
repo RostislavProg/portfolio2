@@ -1,0 +1,211 @@
+@import "../mixinWithVariables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $black;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    padding: 0;
+}
+
+/***************header***************/
+
+header .line, footer .line, .prices--text div .line{
+    border-bottom: 1px $white solid;
+}
+
+/*nav*/
+
+.navbar{
+    padding: 1.875rem 0;
+}
+
+nav div .text{
+    @include text(18, 600, 23.4);
+}
+
+nav div .text:hover{
+    color: $color1;
+    border-bottom: 1px $color1 solid;
+}
+
+.offcanvas-end{
+    background-color: $black;
+}
+
+.offcanvas{
+    --bs-offcanvas-width: 475px;
+}
+
+.navbar-toggler{
+    border: 0;
+}
+/*menu*/
+
+.offcanvas .menu--container{
+    margin: 42px 82px;
+}
+
+.btn-close, .btn-close:hover{
+    opacity: 1;
+    padding: 0;
+}
+
+.menu--container h4{
+    @include text(24, 700, 28.8);
+}
+
+.menu--container p{
+    @include text(18, 400, 23.4);
+}
+
+.menu--container__text{
+    padding-top: 175px;
+    padding-bottom: 20px;
+}
+
+.menu--container div{
+    padding-top: 60px;
+}
+
+.menu--container div p{
+    margin: 0;
+    padding-top: 10px;
+}
+
+/***************map***************/
+
+section h2{
+    @include text(48, 700, 57.6);
+    text-align: center;
+    padding: 80px 0;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************footer***************/
+
+footer{
+    margin-top: 100px;
+}
+
+footer .row{
+    margin: 80px 0;
+}
+
+footer .row div h4{
+    @include text(24, 700, 28.8);
+}
+
+footer .row div p{
+    @include text(18, 400, 23.4);
+}
+
+footer .copyright{
+    margin: 30px 0;
+
+    @include text(18, 700, 25.2);
+    text-align: center;
+    opacity: 50%
+}
+
+
+/***************Adaptive***************/
+
+
+@media(max-width: 767.98px){ 
+    /*header or footer start*/
+    h1{
+        font-size: 48px;
+    }
+    /*header or footer end*/
+}
+
+
+@media (max-width: 991.98px){
+
+    /*header or footer start*/
+
+    .contacts{
+        text-align: right;
+    }
+    .inst{
+        text-align: right;
+    }
+
+    footer .row{
+        margin: 60px;
+    }
+
+    footer .row div{
+        padding-top: 20px;
+    }
+    /*header or footer end*/
+}
+
+
+@media (max-width: 1199.98px) {
+
+    /*header or footer start*/
+
+    .menu--container__text{
+        padding-top: 110px;
+    }
+
+    /*header or footer end*/
+}
+
+
+@media (max-width: 1400px){
+    /*header or footer start*/
+    .hideMenu .text{
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    /*header or footer end*/
+
+}
+
+@media (min-width: 1401px){
+}
+
+/*header or footer start*/
+nav div .text {
+    margin: 0 40px;
+}
+/*header or footer end*/

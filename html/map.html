@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/map/map.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <!-- menu -->
+                <a class="nav--img" href="#">
+                    <img src="../img/icons/inst.png" alt="inst">
+                </a>
+                <div class="d-none d-xl-block">
+                    <a class="text" href="index.html">Главная</a>
+                    <a class="text" href="masters.html">Мастера</a>
+                    <a class="text" href="prices.html">Цены</a>
+                </div>
+                <a class="nav--img href="#">
+                    <img src="../img/icons/logo.png" alt="logo">
+                </a>
+                <div class="d-none d-xl-block">
+                    <a class="text" href="#">Акции</a>
+                    <a class="text" href="#">Отзывы</a>
+                    <a class="text" href="map.html">Карта</a>
+                </div>
+                <a class="nav--img class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <img src="../img/icons/menu.png" alt="menu">
+                </a>
+                
+                <!-- Offcanvas -->
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="menu--container">
+                        <a class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="../img/icons/close.png" alt="close">
+                        </a> 
+
+                        <div class="hideMenu d-block d-xl-none">
+                            <a class="text" href="index.html">Главная</a><br>
+                            <a class="text" href="masters.html">Мастера</a><br>
+                            <a class="text" href="prices.html">Цены</a><br>
+                            <a class="text" href="#">Акции</a><br>
+                            <a class="text" href="#">Отзывы</a><br>
+                            <a class="text" href="map.html">Карта</a><br>
+                        </div>
+
+                        <p class="menu--container__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem dui, arcu faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis. Tortor donec pellentesque leo ac placerat. Morbi.</p> 
+                        <div class="d-none d-xl-block">
+                            <div>
+                                <h4>Контакты</h4>
+                                <p>+380 (84) 811-85-08</p>
+                                <p>+380 (84) 811-85-08</p>
+                                <p>Дерибасовская, дом 36 лит. С</p>
+                            </div>
+                            <div>
+                                <h4>Режим работы</h4> 
+                                <p>C 10:00 до 21:00 (Пн-Пт)</p>
+                                <p>С 11:00 до 20:00 (Сб-Вс)</p>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </nav>
+        <div class="container line"></div>
+    </header>
+
+    <section class="container">
+        <h2>Наш Адрес</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.454741882751!2d30.744945733460128!3d46.47046233652986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63179ee84c87d%3A0x994ab8cbaaf91222!2sMelograno!5e0!3m2!1sru!2sus!4v1660154963343!5m2!1sru!2sus" width="1296" height="576" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="container">
+        <div class="line"></div>
+        <div class="row">
+            <div class="col-4 col-lg-2">
+                <a href="#">
+                    <img src="../img/icons/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="col-8 col-lg-5 contacts">
+                <h4>Контакты</h4>
+                <p>+380 (84) 811-85-08</p>
+                <p>+380 (84) 811-85-08</p>
+                <p>Дерибасовская, дом 36 лит. С</p>
+            </div>
+            <div class="col-8 col-lg-3">
+                <h4>Режим работы</h4>
+                <p>C 10:00 до 21:00 (Пн-Пт)</p>
+                <p>С 11:00 до 20:00 (Сб-Вс)</p>
+            </div>
+            <div class="col-4 col-lg-2 inst">
+                <h4>Мы в Instagram</h4>
+                <a href="#">
+                    <img src="../img/icons/inst.png" alt="inst">
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <p class="copyright">Copyright © 2017 - 2022</p>
+    </footer>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

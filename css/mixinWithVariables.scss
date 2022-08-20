@@ -1,0 +1,10 @@
+$black: #111111;
+$color1: #CDAA7D; 
+$white: #FFFFFF;
+$font:'Cormorant Garamond', serif; 
+@mixin text($size, $weight, $height, $color: $white){
+    font-size: $size + px;
+    font-weight: $weight;
+    line-height: $height + px;
+    color: $color;
+}

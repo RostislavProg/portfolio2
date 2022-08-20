@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111111;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0;
+}
+
+/***************header***************/
+header .line, footer .line, .prices--text div .line {
+  border-bottom: 1px #FFFFFF solid;
+}
+
+/*nav*/
+.navbar {
+  padding: 1.875rem 0;
+}
+
+nav div .text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  color: #FFFFFF;
+}
+
+nav div .text:hover {
+  color: #CDAA7D;
+  border-bottom: 1px #CDAA7D solid;
+}
+
+.offcanvas-end {
+  background-color: #111111;
+}
+
+.offcanvas {
+  --bs-offcanvas-width: 475px;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+/*menu*/
+.offcanvas .menu--container {
+  margin: 42px 82px;
+}
+
+.btn-close, .btn-close:hover {
+  opacity: 1;
+  padding: 0;
+}
+
+.menu--container h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #FFFFFF;
+}
+
+.menu--container p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #FFFFFF;
+}
+
+.menu--container__text {
+  padding-top: 175px;
+  padding-bottom: 20px;
+}
+
+.menu--container div {
+  padding-top: 60px;
+}
+
+.menu--container div p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+/***************prices***************/
+section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 82px;
+  margin: 0;
+}
+
+.prices {
+  padding-top: 80px;
+}
+
+.prices img {
+  padding-right: 65px;
+}
+
+.prices--text {
+  padding-left: 65px;
+}
+
+.prices--text__div {
+  padding-top: 40px;
+}
+
+.prices--text span {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 35.1px;
+  color: #FFFFFF;
+}
+
+.prices--text__right {
+  float: right;
+}
+
+.prices--text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+
+.prices--text div .line {
+  margin-top: 20px;
+}
+
+.prices--text__middle {
+  padding-left: 12px;
+  padding-right: 65px;
+}
+
+.prices--text__middle img {
+  padding-right: 0;
+  float: right;
+}
+
+/***************footer***************/
+footer {
+  margin-top: 100px;
+}
+
+footer .row {
+  margin: 80px 0;
+}
+
+footer .row div h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #FFFFFF;
+}
+
+footer .row div p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #FFFFFF;
+}
+
+footer .copyright {
+  margin: 30px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: #FFFFFF;
+  text-align: center;
+  opacity: 50%;
+}
+
+/***************Adaptive***************/
+@media (max-width: 767.98px) {
+  /*header or footer start*/
+  h1 {
+    font-size: 48px;
+  }
+  /*header or footer end*/
+}
+
+@media (max-width: 991.98px) {
+  /*header or footer start*/
+  .contacts {
+    text-align: right;
+  }
+  .inst {
+    text-align: right;
+  }
+  footer .row {
+    margin: 60px;
+  }
+  footer .row div {
+    padding-top: 20px;
+  }
+  /*header or footer end*/
+}
+
+@media (max-width: 1199.98px) {
+  /*header or footer start*/
+  .menu--container__text {
+    padding-top: 110px;
+  }
+  /*header or footer end*/
+  .prices img {
+    width: 80% !important;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .prices--text, .prices--text__middle {
+    max-width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  /*header or footer start*/
+  .hideMenu .text {
+    display: inline-block;
+    margin: 20px 0;
+  }
+  /*header or footer end*/
+  .prices img {
+    width: 100%;
+    padding: 0;
+  }
+  .prices--text__div {
+    padding-top: 25px;
+  }
+}
+
+nav div .text {
+  margin: 0 40px;
+}
+/*# sourceMappingURL=prices.css.map */
